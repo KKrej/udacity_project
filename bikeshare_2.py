@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 import datetime as dt
+from tabulate import tabulate
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -140,13 +141,18 @@ def df_check(df):
             print(df.head())
             cnt = 5
 
-        answer2 = 'yes'
+        """answer2 = 'yes'
         while answer2.lower() == 'yes':
             answer2 = input('\nShow next 5 raws of data? Type yes or no\n')
             print(df.iloc[cnt:cnt+5])
             cnt += 5
-
-
+        """
+        while True:
+            display_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
+            if display_data.lower() != 'yes':
+                break
+            print(tabulate(df.iloc[np.arange(0+cnt,5+cnt)], headers ="keys"))
+            cnt += 5
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
