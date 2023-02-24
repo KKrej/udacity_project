@@ -1,3 +1,7 @@
+"""
+This is a code written by Katarzyna Krej for Project no 2 during a 'Python for Data Science' Udacity nanodegree.
+
+"""
 import time
 import pandas as pd
 import numpy as np
@@ -251,6 +255,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
+        """Checking if user wants to continue"""
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
