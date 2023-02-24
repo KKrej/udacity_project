@@ -2,10 +2,11 @@
 23.02.2023
 
 ### Project Title
-Replace the Project Title
+Bikeshare analysis
 
 ### Description
-Describe what your project is about and what it does
+This program is analysing the basic statistics of bike rental company - bikeshare, for three cities in US:
+Washington, New York and Chicago. User is able to filter upfront which city and date of the rent he/she wants to see the statistics for.
 
 ### Files used
 Include the files used
