@@ -1,3 +1,6 @@
+"""
+    This is a code written by Katarzyna Krej as a project no 2 during the 'Python for Data Science' nanodegree.
+"""
 import time
 import pandas as pd
 import numpy as np
